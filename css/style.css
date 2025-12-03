@@ -771,6 +771,201 @@ h3 {
 .dev-contact p:hover i {
     transform: rotate(360deg) scale(1.2);
     color: #D4AF37;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-left .btn-submit {
+    padding: 1.4rem 3rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    margin-top: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+    transition: var(--transition);
+}
+
+.contact-left .btn-submit:hover {
+    background-color: #000;
+}
+
+#insta {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../images/insta-pic.jpg') center/cover no-repeat fixed;
+    min-height: 65vh;
+}
+
+#insta .title h2 {
+    color: var(--light-color);
+    background: none;
+    -webkit-text-fill-color: var(--light-color);
+}
+
+#insta .title h2::after {
+    background-color: var(--light-color);
+}
+
+.insta-grid>div {
+    height: 400px;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.insta-grid>div img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.insta-grid>div:hover {
+    transform: scale(0.9);
+}
+
+/* For More Section */
+.for-more {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.for-more .title h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.more-links {
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.more-link {
+    font-size: 1.8rem;
+    color: var(--light-color);
+    padding: 1rem 2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+}
+
+.more-link:hover {
+    background: #fff;
+    color: #000;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-color: #fff;
+}
+
+.more-link i {
+    font-size: 2.2rem;
+    transition: color 0.3s ease;
+}
+
+.more-link:hover i {
+    color: #D4AF37;
+    /* Gold accent on hover */
+}
+
+/* footer */
+#footer {
+    background-color: #1a1a1a;
+    /* Darker footer */
+    color: var(--light-color);
+    text-align: center;
+    padding: 2rem 0;
+    /* Reduced padding */
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+}
+
+/* Unique Top Gradient Border */
+#footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #D4AF37, transparent);
+    opacity: 0.8;
+}
+
+.developer-info h3 {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.2rem;
+    /* Reduced size */
+    color: var(--light-color);
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.developer-info h3:hover {
+    color: #D4AF37;
+    /* Gold on hover */
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+}
+
+.developer-info>p {
+    font-family: "Lavishly Yours", cursive;
+    font-weight: 400;
+    font-style: normal;
+    opacity: 0.7;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    font-size: 2.4rem;
+    /* Reduced size */
+    transition: all 0.3s ease;
+}
+
+.developer-info>p:hover {
+    opacity: 1;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.dev-contact {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    /* Reduced gap */
+    margin-top: 1.5rem;
+}
+
+.dev-contact p {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.dev-contact a {
+    color: var(--light-color);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.dev-contact a:hover {
+    color: #D4AF37;
+}
+
+.dev-contact i {
+    font-size: 1.5rem;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Icon Animation on Hover */
+.dev-contact p:hover i {
+    transform: rotate(360deg) scale(1.2);
+    color: #D4AF37;
 }
 
 
@@ -863,6 +1058,35 @@ h3 {
 }
 
 @media(max-width: 768px) {
+
+    /* General Mobile Adjustments */
+    .py-7 {
+        padding: 4rem 0;
+        /* Reduce padding on mobile */
+    }
+
+    .title h2 {
+        font-size: 3rem;
+        /* Smaller headings */
+    }
+
+    /* Header & Nav */
+    .main-nav {
+        padding: 1rem 0;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        /* Allow links to wrap */
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .nav-links li a {
+        font-size: 1.2rem;
+        /* Smaller nav text */
+    }
+
     .header-images {
         flex-direction: column;
         align-items: center;
@@ -892,6 +1116,18 @@ h3 {
 
     .center-overlay a {
         font-size: 3rem;
+    }
+
+    /* Footer Mobile */
+    .dev-contact {
+        flex-direction: column;
+        /* Stack contact info */
+        gap: 1rem;
+    }
+
+    .developer-info>p {
+        font-size: 2rem;
+        /* Slightly smaller tagline */
     }
 }
 
